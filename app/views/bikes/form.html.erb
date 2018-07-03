@@ -1,0 +1,15 @@
+<form class="" action="/<%=@bike.id%>" method="post">
+  <label for="">ID</label>
+  <input type="text" name="id" value="<%=@bike.id%>">
+  <br>
+  <label for="">Make</label>
+  <input type="text" name="name" value="<%=@bike.make%>">
+  <br>
+  <label for="">Model</label>
+  <input type="text" name="id" value="<%=@bike.model%>">
+  <br>
+  <input href="/" type="submit" name="submit" value="submit">
+  <% if @bike.id != "" %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>
